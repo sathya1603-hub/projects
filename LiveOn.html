@@ -1,0 +1,561 @@
+<html>
+    <head> 
+        <title> Dubai </title>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="StyleSheet" href="Style.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="navbar">
+              <h3 class="logo"> GoDubai </h3>
+              <nav>
+                <ul id="menuList">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="places.html">Places</a></li>
+                  <li><a href="Kids.html">Kids</a></li>
+                  <li><a href="what's on.html">what's on</a></li>
+                  <li><a href="LiveOn.html">Live On</a></li>
+                  <li><a href="Blog.html">Blog</a></li>
+                  <li><a href="AboutUs.html">About Us</a></li>
+                  </li>
+                </ul>
+              </nav>
+              <img src="Images\Home\Menu-Icon.jpg"  alt="Menu-icon" class="menu-icon" onclick="togglemenu()">
+            </div>
+          </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                    <img src="Images\Live On\Live1.jpg" alt="Live1" class="img-rounded img-responsive Limg1">
+                    <div  class="TopRight">One of the safest and most desirable places to live, Dubai is also a global business and tourism hub 
+                        that has something for everyone.World-class schools and healthcare. Hundreds of shopping and dining options 
+                        for every budget. And an active sports and social calendar that includes events and festivals close to the 
+                        hearts of the over 200 nationalities living here.</div>
+                </div>
+            </div>
+        </div>
+        <div class="container live">
+            <h1 style="font-size:50px;font-family:'Times New Roman', Times, serif;">Deals In Dubai</h1>
+            <ul class="nav nav-tabs liveTabs">
+              <li class="active"><a data-toggle="tab" href="#home">Hotel Deals</a></li>
+              <li><a data-toggle="tab" href="#dining">Dining Deals</a></li>
+              <li><a data-toggle="tab" href="#shopping">Shopping Deals</a></li>
+              <!--<li><a data-toggle="tab" href="#">Kids Deals</a></li>-->
+            </ul>
+		<div class="tab-content">
+				<div id="home" class="tab-pane fade in active">
+				<div class="container live2">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                        <img src="Images\Live On\Hotel1.jpg"  alt="Hotel1" class="img-responsive Limg2">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                        <p class="Lpara2"><b>Enjoy Solo, Group or Couple's Trips With Brilliant Accomdation Offers</b></p>
+                        <p class="Lpara3"> Are you travelling to Dubai soon? Simplify your holiday planning by browsing 
+                            top accommodations in the city, with exciting seasonal offers to take advantage of.
+                            From five-star resorts with luxury amenities to all-inclusive packages and budget options,
+                            select your property preferences to filter Dubai hotel deals best suited to you. Whether 
+                            you’re travelling for business or pleasure, with family or solo, are a first-time visitor or
+                            a frequent traveller, you’ll find what you need easily and get great savings with our hotel listings.
+                            Explore, book and enjoy your stay in Dubai.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid hotel5">
+                <div class="container hotel1">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-12 himages">
+                            <img src="Images\Live On\Address Sky View.jpg" alt="Address Sky View" class="img-responsive himg1">
+                            <h3><b>Address Sky View</b></h3>
+                            <hr/>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Book Now</button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" role="dialog">
+                                <div class="modal-dialog modal1">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Check the Rooms Availability</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                            <div class="container form1">
+                                                <form name="MyForm" method="post" onsubmit="return validate()">
+                                                    <div class="form-group">
+                                                    
+                                                        <div class="col-sm-10">          
+                                                        <label class="labels">No of Rooms</label>
+                                                        <input type="number" class="form-control text2" id="rooms" placeholder="" name="numrooms">
+                                                        </div><br/>	<br/><br/>								  	
+                                                        <div class="col-sm-10">
+                                                            <label class="labels">Check-in Date</label>
+                                                            <input type="Date" class="form-control text2" id="chkdate1" placeholder="" name="date1">
+                                                        </div><br/><br/><br/>
+                                                        <div class="col-sm-10">  
+                                                            <label class="labels">Check-out Date</label>
+                                                            <input type="Date" class="form-control text2" id="chkdate2" placeholder="" name="date2">
+                                                        </div><br/><br/><br/>
+                                                        <div class="col-sm-10"> 
+                                                            <label class="labels">No of Persons</label> 
+                                                            <input type="number" class="form-control text2" id="persons" placeholder="" name="numpersons">
+                                                        </div>
+                                                        <div class="col-sm-10">
+                                                        <input type="submit" class="form-control chk1" value="Check Availability">							  
+                                                        </div>
+                                                    </div>	
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                        
+                        
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-12 himages">
+                            <img src="Images\Live On\Rose.jpg" alt="Rose" class="img-responsive himg1">
+                            <h3><b>Rose Executive Hotel</b></h3>
+                            <hr/>
+                            <button type="submit" class="btn btn-primary">Book Now</button>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-12 himages">
+                            <img src="Images\Live On\Armani.jpg" alt="Armani" class="img-responsive himg1">
+                            <h3><b>Armani Hotel</b></h3>
+                            <hr/>
+                            <button type="submit" class="btn btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container hotel2">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-12 himages">
+                            <img src="Images\Live On\HDubai.jpg" alt="HDubai" class="img-responsive himg1">
+                            <h3><b>The H Dubai</b></h3>
+                            <hr/>
+                            <button type="submit" class="btn btn-primary">Book Now</button>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-12 himages">
+                            <img src="Images\Live On\Paramount.jpg" alt="Paramount" class="img-responsive himg1">
+                            <h3><b>Paramount Hotel Dubai</b></h3>
+                            <hr/>
+                            <button type="submit" class="btn btn-primary">Book Now</button>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-12 himages">
+                            <img src="Images\Live On\RoverPark.jpg" alt="Roverpark" class="img-responsive himg1">
+                            <h3><b>Rove At the Park</b></h3>
+                            <hr/>
+                            <button type="submit" class="btn btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container hotel3">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-12 himages">
+                            <img src="Images\Live On\NH.jpg" alt="NH" class="img-responsive himg1">
+                            <h3><b>NH Collection Dubai The Palm</b></h3>
+                            <hr/>
+                            <button type="submit" class="btn btn-primary">Book Now</button>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-12 himages">
+                            <img src="Images\Live On\Ritz.jpg"  alt="Ritz" class="img-responsive himg1">
+                            <h3><b>The Ritz-Carlton Dubai</b></h3>
+                            <hr/>
+                            <button type="submit" class="btn btn-primary">Book Now</button>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-12 himgaes">
+                            <img src="Images\Live On\Swissotel.jpg" alt="Swissotel" class="img-responsive himg2 ">
+                            <h3><b>Swissotel AI Murooj Dubai</b></h3>
+                            <hr/>
+                            <button type="submit" class="btn btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <div id="dining" class="tab-pane fade">
+                    <div class="Container Dining1">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 Dining2">
+                                <p class="Dpara1"><b>Nothing Brings People together Like Good Food</b></p>
+                                <p class="Dpara2">Dubai is home to diverse cuisines and flavours from all over the world.
+                                Whether you're looking to dive into local gastronomy or sample the hottest culinary trends,
+                                you can dine out at some of the world's finest eateries here. If you’re a seasoned foodie, 
+                                cultural explorer or are simply looking for a delicious time, don’t miss out on tempting dining 
+                                deals available across the city. Find your favourite offer, book a table and discover Dubai’s best eats today.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <ul class="nav nav-tabs liveTabs">
+                            <li class="active"><a data-toggle="tab" href="#Indian">Indian Cuisine</a></li>
+                            <li><a data-toggle="tab" href="#Chinese">Chinese Cuisine</a></li>
+                            <li><a data-toggle="tab" href="#Chat">Chat Items</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="Indian" class="tab-pane fade in active">
+                                <div class="Container Indian">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12"> 
+                                            <img Src="Images\Dining\Indian.jpg" alt="Indian-Food" class="img-responsive Dimg1">
+                                        </div>   
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                                            <p class="Dpara3"><b>THE CROSSING</b> <br/>
+                                                At H Dubai, Sheikh Zayed Road, Trade Centre, Trade Centre 1,  Dubai <br/>
+                                                Daily from 12 pm to 1 am<br/>
+                                                <span class="glyphicon glyphicon-envelope dmsg">&nbsp;info@crossingtherestaurant.com</span><br/>  
+                                                <Span class="glyphicon glyphicon-user duser">&nbsp;971(0)44919695</Span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Container Indian">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12"> 
+                                            <img Src="Images\Dining\Indian1.jpg" alt="Indian-Food" class="img-responsive Dimg2">
+                                        </div> 
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                                            <p class="Dpara3"><b>MINT LEAF OF LONDON</b> <br/>
+                                                At South Tower, Emirates Financial Towers, DIFC, Dubai.<br/>
+                                                Saturdays, Sundays, Tuesdays, Wednesdays: 12 pm to 1 am<br/>
+                                                Thursdays, Fridays, Mondays: 12 pm to 2 am<br/>
+                                                <span class="glyphicon glyphicon-envelope dmsg">&nbsp;reservation@mintleafdubai.com</span><br/>  
+                                                <Span class="glyphicon glyphicon-user duser">&nbsp;971(0)47060900</Span>
+                                            </p>
+                                        </div> 
+                                    </div> 
+                                </div>
+                                <div class="Container Indian">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12"> 
+                                            <img Src="Images\Dining\rava-pongal.jpg" alt="Indian-Food" class="img-responsive Dimg2">
+                                        </div> 
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                                            <p class="Dpara3"><b>RANG MAHAL</b> <br/>
+                                                At JW Marriott Marquis Dubai, Sheikh Zayed Road,Business Bay, Dubai.<br/>
+                                                Daily from 6 pm to 12 am.<br/>  
+                                                <span class="glyphicon glyphicon-envelope dmsg">&nbsp;reservation@mintleafdubai.com</span><br/>
+                                                <Span class="glyphicon glyphicon-user duser">&nbsp;971(0)44143000</Span>
+                                            </p>
+                                        </div>
+                                    </div>  
+                                </div>
+                                <div class="Container Indian">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12"> 
+                                            <img Src="Images\Dining\Indian-Breakfast.jpg" alt="Indian-Food" class="img-responsive Dimg2">
+                                        </div> 
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                                            <p class="Dpara3"><b>Saravana Bhavan </b> <br/>
+                                                At Abdul Razak Ali Al Zarooni Building, Al Muteena Street, Deira, Dubai<br/>
+                                                At Droor Residential Tower, Amman Street, Al Nahda, Dubai.<br/>
+                                                Daily from 7:30 am to 11 pm<br/>
+                                                <span class="glyphicon glyphicon-envelope dmsg">&nbsp;reservation@mintleafdubai.com</span><br/>
+                                                <Span class="glyphicon glyphicon-user duser">&nbsp;971(0)44143000</Span>
+                                            </p>
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="Chinese" class="tab-pane fade">
+                                <div class="Container Indian">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12"> 
+                                            <img Src="Images\Dining\Chinise2.jpg" alt="chinese-Food2" class="img-responsive Dimg4">
+                                        </div> 
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                                            <p class="Dpara3"><b>HUTONG </b> <br/>
+                                                At Difc Gate Building 6, Ground Floor, Dubai <br/>
+                                                Dubai International Financial Centre (DIFC)<br/>
+                                                2.4 km from The Dubai Fountain<br/>
+                                                <span class="glyphicon glyphicon-envelope dmsg">&nbsp;reservation@mintleafdubai.com</span><br/>
+                                                <Span class="glyphicon glyphicon-user duser">&nbsp;97142200868</Span>
+                                            </p>
+                                        </div>  
+                                    </div>
+                                </div>
+                                <div class="Container Indian">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12"> 
+                                            <img Src="Images\Dining\Chinise3.jpg" alt="chinese-Food3" class="img-responsive Dimg4">
+                                        </div>  
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                                            <p class="Dpara3"><b>FISHERMAN's HUB ARABIAN COURTYARD HOTEL</b> <br/>
+                                                At Al Fahidi Street Meena Bazaar, Duba <br/>
+                                                Al Fahidi 0.3 km from Dubai Creek<br/>
+                                                Daily from 12pm to 6AM<br/>
+                                                <span class="glyphicon glyphicon-envelope dmsg">&nbsp;reservation@mintleafdubai.com</span><br/>
+                                                <Span class="glyphicon glyphicon-user duser">&nbsp;971505364554</Span>
+                                            </p>
+                                        </div>  
+                                    </div>  
+                                </div>
+                                <div class="Container Indian">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12"> 
+                                            <img Src="Images\Dining\Chinise4.jpg" alt="chinese-Food4" class="img-responsive Dimg4">
+                                        </div>  
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                                            <p class="Dpara3"><b>YINGSU</b> <br/>
+                                                The Walk - Jumeirah Beach Residence Lobby Level,<br/> 
+                                                Double Tree by Hilton, Dubai  <br/>
+                                                Daily from 6pm to 1AM<br/>
+                                                <span class="glyphicon glyphicon-envelope dmsg">&nbsp;reservation@mintleafdubai.com</span><br/>
+                                                <Span class="glyphicon glyphicon-user duser">&nbsp;971505364554</Span>
+                                            </p>
+                                        </div>
+                                    </div>    
+                                </div>
+                                <div class="Container Indian">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12"> 
+                                            <img Src="Images\Dining\Chinise5.jpg" alt="Chinese-Food5" class="img-responsive Dimg4">
+                                        </div>  
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                                            <p class="Dpara3"><b>YING JI DIM SUM</b> <br/>
+                                                Next to the Boulevard Entrance of China Town Dubai Mall, Dubai<br/> 
+                                                0.6 km from The Dubai Fountain<br/>
+                                                Daily from 10Am to 12AM<br/>
+                                                <span class="glyphicon glyphicon-envelope dmsg">&nbsp;reservation@mintleafdubai.com</span><br/>
+                                                <Span class="glyphicon glyphicon-user duser">&nbsp;971585868856</Span>
+                                            </p>
+                                        </div> 
+                                    </div>   
+                                </div>
+                            </div>
+                            <div id="Chat" class="tab-pane fade">
+                                <div class="Container Indian1">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12"> 
+                                            <img Src="Images\Dining\Chat1.jpg" alt="chat-item1" class="img-responsive Dimg5">
+                                        </div>   
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                                            <p class="Dpara4"><b>SPICE KLUB</b> <br/>
+                                                Al Raffa 3 Building, Mankhool <br/>
+                                                Daily from 12PM to 3PM | 6:30PM-11PM<br/>
+                                                <span class="glyphicon glyphicon-envelope dmsg">&nbsp;info@crossingtherestaurant.com</span><br/>  
+                                                <Span class="glyphicon glyphicon-user duser">&nbsp;045260731</Span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Container Indian1">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                                            <p class="Dpara5"><b>MUMBAI MASTI JUICE CENTER</b> <br/>
+                                                At Multiple Locations in Al Nahda, Al Fahidi, etc<br/>
+                                                Daily from 8AM to 2AM<br/>
+                                                <span class="glyphicon glyphicon-envelope dmsg">&nbsp;info@crossingtherestaurant.com</span><br/>  
+                                                <Span class="glyphicon glyphicon-user duser">&nbsp;0555843354</Span>
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12"> 
+                                            <img Src="Images\Dining\Chat2.jpg" alt="chat-item2" class="img-responsive Dimg6">
+                                        </div>  
+                                    </div>
+                                </div>
+                                <div class="Container Indian1">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12"> 
+                                            <img Src="Images\Dining\Chat3.png" alt="chat-item3" class="img-responsive Dimg5">
+                                        </div>   
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                                            <p class="Dpara4"><b> CHANDNI CHOWK</b> <br/>
+                                                Cluster T, JLT, Dubai <br/>
+                                                Daily from 11AM to 11PM<br/>
+                                                <span class="glyphicon glyphicon-envelope dmsg">&nbsp;info@crossingtherestaurant.com</span><br/>  
+                                                <Span class="glyphicon glyphicon-user duser">&nbsp;045260864</Span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="Container Indian1">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                                            <p class="Dpara5"><b> RAJDHANI STREET</b> <br/>
+                                                Cluster I, JLT and Karama, Dubai<br/>
+                                                Daily from 3:30PM to 11PM<br/>
+                                                <span class="glyphicon glyphicon-envelope dmsg">&nbsp;info@crossingtherestaurant.com</span><br/>  
+                                                <Span class="glyphicon glyphicon-user duser">&nbsp;045260427</Span>
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12"> 
+                                            <img Src="Images\Dining\Chat4.jpg" alt="Chat-item4" class="img-responsive Dimg6">
+                                        </div> 
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="shopping" class="tab-pane fade">
+                    <div class="Container Shop">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                                <p class="Spara1"><b>D</b>ubai is a shopping lover’s dream come true. From luxury labels to international brands 
+                                    and local wares, there’s no shortage of interesting finds. Whether you are looking for the latest 
+                                    fashion at Dubai Mall or souvenirs at charming markets, the city will welcome you with special deals.
+                                    Dubai is home to annual shopping celebrations like Dubai Shopping Festival and Dubai Summer Surprises 
+                                    as well as bi-yearly super sales at malls and seasonal mega sales online. So, keep your wallets ready
+                                    for unbeatable citywide discounts all year round.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Container shop1">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                                <img src="Images\Shopping\Shop.jpg" alt="shop-img" Class="img-responsive Simg1">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">    
+                                <p class="Spara2"> We are eagerly awaiting the launch of our offers for shopping. 
+                                In our organization, we are offering a flat 40% discount for each shopping experience
+                                at our affiliated malls in Dubai. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Container Shop">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                                <p class="Spara1"> Here, Our affiliated Malls In Dubai
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Container shop1">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-xs-12 col-sm-12">
+                                <img src="Images\Shopping\mall1.jpg" alt="Shopping Mall" Class="img-responsive Simg2">
+                                <h3 class="Spara3"> Dubai Mall</h3>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-12 col-sm-12">    
+                                <img src="Images\Shopping\mall2.jpg" alt="Shopping Mall" Class="img-responsive Simg2">
+                                <h3 class="Spara3"> City Walk </h3>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-12 col-sm-12">    
+                                <img src="Images\Shopping\mall3.jpg" alt="Shopping Mall" Class="img-responsive Simg2">
+                                <h3 class="Spara3"> Meracato Mall </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="container offers">
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                    <h3><b>Here Further offers came from our side,</b></h3>
+                    <p> Attend our Platinum Dubai is the official privilege programme for our webiste offering access to discounts, special offers, vouchers, gift cards and leisure clubs – Thank You</p>
+                </div>
+            </div>
+    
+            <div class="container hoffer">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-xs-12 col-sm-12 hoff">
+                        <img src="Images\Live On\Studies.jpg" alt="studies" class="img-responsive himg3">
+                        <h3>Education & Learning</h3>
+                        <p class="hpara"> Choose from nurseries,schools, universities or classes across the Dubai.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-xs-12 col-sm-12 hoff">
+                        <img src="Images\Live On\fashion1.jpg" alt="fashion" class="img-responsive himg3">
+                        <h3>Fashion</h3>
+                        <p class="hpara"> Get discounts on jewellery,clothing, footwear,handbags and many more.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-xs-12 col-sm-12 hoff">
+                        <img src="Images\Live On\Leisure.png" alt="Leisure" class="img-responsive himg3">
+                        <h3>Leisure</h3>
+                        <p class="hpara"> Golf,parks,indoor activities anf fun for the entire family across the Dubai.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-xs-12 col-sm-12 hoff">
+                        <img src="Images\Live On\yoga.jpg" alt="Yoga" class="img-responsive himg3">
+                        <h3>Mind & Body</h3>
+                        <p class="hpara"> Keeping healthy & fit with hundreds of partners across differenr specialities.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid footer1">
+                <div class="row row6">
+                  <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 stay">
+                    <!--<h4 class="down"> Stay updated <h4>-->
+                    <p class="down2"> Send me exclusive offers,Unique gift ideas, 
+                    and get the latest updates on things to do in dubai</p>
+                    <input type="email" placeholder="Enter your mail" class="down3">
+                    <button type="submit" class="btn btn-primary down4"> Subscribe </button>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                      <a href="LiveOn.html">
+                        <img src="Images\Home\UpArrow.png" alt="uparrow" Class="img-responsive UpArr">
+                      </a>
+                </div>
+                <div class="row row7">
+                    <div class="col-lg-3 col-md-3 col-xs-12 col-sm-12">
+                      <div class="ad">
+                                <p class="addr">No:112, Krishna Street,T.nagar,<br/>
+                                                Chennai - 600047,<br/>
+                                                TamilNadu,<br/>
+                                                India</p>
+                                <h3><span class="glyphicon glyphicon-envelope msg"></span></h3>
+                                <h4 class="msgt">traveltodubai@gmail.com</h4>
+                      </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-xs-12 col-sm-12 last1">
+                                    <h4><U> JOURNEY </U> </h4>
+                                    <p><a href="#" class="foot">what's on</a></p>
+                        <p><a href="#" class="foot">Live On</a></p>
+                                    <p><a href="#" class="foot">Kids</a></p>
+                                    
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-xs-12 col-sm-12 last2">
+                                    <h4><u> SUPPORT </u></h4>
+                                    <p><a href="#" class="foot">Blog</a></p>
+                                    <p><a href="#" class="foot">About Us</a></p>
+                                    <p><a href="#" class="foot">FAQs</a></p>
+                            </div>
+                            
+                            <div class="col-lg-2 col-md-2 col-xs-12 col-sm-12 last3">
+                                    <h4><u> TERMS </u></h4>
+                                    <p><a href="#" class="foot">Privacy Policy</a></p>
+                                    <p><a href="#" class="foot">Terms of Use</a></p>
+                                    <p><a href="#" class="foot">Our Values</a></p>
+                            </div>
+                    <div class="col-lg-3 col-md-3 col-xs-12 col-sm-12 last2">
+                                  <h4 Style="margin-left:10px;"><u> FOLLOW &nbsp US </u></h4>
+                                  <img src="Images\Home\face2.png" alt="Facebook" class="img-responsive img5">
+                                  <img src="Images\Home\Insta6.jpg" alt="Instagram" class="img-responsive img5">
+                                  <img src="Images\Home\Twitter.jpg" alt="Twitter" class="img-responsive img5">
+                                  <button type="button" class="btn btn-xs btn3">Download the GoDubai App</button>
+                    </div>
+                  </div>
+                </div>
+        
+                <script>
+                      var menuList = document.getElementById("menuList");
+                      menuList.style.maxHeight ="0px;";
+                      menuList.style.maxWidth ="0px;";
+                      function togglemenu()
+                      {
+                        if(menuList.style.maxHeight == "0px")
+                        {
+                        menuList.style.maxHeight = "280px";
+                        }
+                        else
+                        {
+                        menuList.style.maxHeight = "0px";
+                        }
+                      }
+                    </script>
+    </body>
+</html>
+       
+              
+        
